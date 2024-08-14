@@ -1,66 +1,79 @@
-/* src/Navbar.css */
+/* Navbar.css */
 
 .navbar {
-    background-color: #ffffff; /* Fondo blanco */
-    color: #9b7f9e; /* Morado suave para el texto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 60px;
-  }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #eaa693; /* Color de marca amarillo */
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  
-  .navbar-logo {
-    width: 40px; /* Ajusta el tamaño del logo según sea necesario */
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #eaa693; /* Borde dorado */
-    margin-right: 10px; /* Espacio entre el logo y el texto */
-  }
-  
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-logo {
+  height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  color: #eaa693;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
   .navbar-menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display: none; /* Oculta el menú en pantallas pequeñas por defecto */
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px; /* Ajusta según el tamaño del navbar */
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .navbar-menu.active {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+
   .navbar-item {
-    margin-left: 20px;
+    margin: 10px 0;
+    text-align: center;
   }
-  
-  .navbar-link {
-    text-decoration: none;
-    color: #9b7f9e; /* Morado suave para el texto */
-    font-weight: 500;
-    font-size: 1rem;
+
+  .navbar-toggler {
+    display: block; /* Muestra el botón de menú en pantallas pequeñas */
+    background-color: #eaa693;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
   }
-  
-  .navbar-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Asegúrate de agregar margen en la parte superior del contenido principal para que no se oculte debajo de la barra de navegación */
-  body {
-    margin-top: 60px; /* Ajusta el valor según la altura de la barra de navegación */
-  }
+}
