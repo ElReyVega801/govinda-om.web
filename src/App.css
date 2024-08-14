@@ -1,3 +1,38 @@
+/* General styles for the app */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes the full height of the viewport */
+}
+
+/* Navbar styles */
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Adjust as needed */
+  color: #fff;
+  padding: 1rem;
+  z-index: 1000; /* Ensure the navbar is on top */
+}
+
+/* Content styles */
+.main-content {
+  margin-top: 4rem; /* Adjust this value based on the height of your navbar */
+  padding: 1rem;
+  flex: 1; /* Ensures that the content area expands to fill available space */
+}
+
+/* Footer styles */
+.Footer {
+  background-color: #333; /* Adjust as needed */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Existing CSS */
 .App {
   text-align: center;
 }

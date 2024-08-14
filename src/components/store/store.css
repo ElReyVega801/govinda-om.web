@@ -1,0 +1,147 @@
+/* store.css */
+.store-container {
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.store-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #eaa693;
+  margin-bottom: 20px;
+}
+
+.store-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: #eaa693;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.nav-button:hover {
+  background-color: #d99b6e;
+}
+
+.product-section {
+  margin-top: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #eaa693;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.add-to-cart-button {
+  background-color: #eaa693;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #d99b6e;
+}
+
+.cart-section {
+  margin-top: 40px;
+}
+
+.cart-title {
+  font-size: 2rem;
+  color: #eaa693;
+  margin-bottom: 20px;
+}
+
+.empty-cart {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaa693;
+}
+
+.checkout-button {
+  background-color: #eaa693;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkout-button:hover {
+  background-color: #d99b6e;
+}
+
+/* Nuevos estilos para los aceites esenciales */
+
+.product-grid {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.product-card {
+  border: 1px solid #eaa693;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #555;
+}
